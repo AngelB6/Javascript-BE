@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #12c2e9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculadora{
+    background-color: #FF0099;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #493240, #FF0099);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #493240, #FF0099); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 500px;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    gap: 1rem;
+}
+
+.pantalla{
+    grid-column: 1/5;
+    background-color: white;
+    padding: 1rem;
+    font-size: 3.5rem;
+    text-align: right;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.boton{
+    background-color: wheat;
+    color: black;
+    border: 0;
+    padding: 1rem;
+    font-size: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-weight: 1000;
+}
+
+.boton:hover{
+    background-color: white;
+}
+
+#cero{
+    grid-column: span 2;
+}
+
+#igual{
+    grid-row: span 2;
+    background-color: beige;
+}
+
+#igual:hover{
+    background-color: bisque;
+}
