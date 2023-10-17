@@ -25,6 +25,8 @@ botones.forEach(boton =>{
 
         if (pantalla.textContent === "0" || pantalla.textContent === "¡Error!"){
             pantalla.textContent = botonOp
+        }else if (pantalla.textContent.slice(-1) === '/' && botonOp === '/'){
+            return;
         }else{
             pantalla.textContent += botonOp
         }
@@ -33,6 +35,5 @@ botones.forEach(boton =>{
             pantalla.textContent ="0"
             return;
         }
-
     })
 })
