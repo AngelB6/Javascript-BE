@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #012030;
+}
+
+.reloj{
+    border: 1rem solid #45C4B0;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50vh;
+    font-family: monospace;
+    font-size: 3rem;
+    color: #13678A;
+}
