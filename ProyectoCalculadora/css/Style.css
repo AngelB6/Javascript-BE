@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-size: sans-serif;
 }
-
 body{
     min-height: 100vh;
     background-color: #12c2e9;  /* fallback for old browsers */
@@ -14,7 +13,6 @@ body{
     justify-content: center;
     align-items: center;
 }
-
 .calculadora{
     background-color: #FF0099;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #493240, #FF0099);  /* Chrome 10-25, Safari 5.1-6 */
@@ -27,7 +25,6 @@ body{
     border-radius: 1rem;
     gap: 1rem;
 }
-
 .pantalla{
     grid-column: 1/5;
     background-color: white;
@@ -38,7 +35,6 @@ body{
     font-weight: 600;
     margin-bottom: 1rem;
 }
-
 .boton{
     background-color: wheat;
     color: black;
@@ -52,20 +48,16 @@ body{
     cursor: pointer;
     font-weight: 1000;
 }
-
 .boton:hover{
     background-color: white;
 }
-
 #cero{
     grid-column: span 2;
 }
-
 #igual{
     grid-row: span 2;
     background-color: beige;
 }
-
 #igual:hover{
     background-color: bisque;
 }

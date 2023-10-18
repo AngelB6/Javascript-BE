@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #3A0A40;
+}
+.reloj{
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/relojFondo.png");
+    background-size: cover;
+    border: 0.8rem solid #A6415C;
+    border-radius: 50vh;
+    /* Agregamos una sombra interna. inset siginifica que es interna. El primer parametro va a ser sobre el eje x. El segundo es sobre el eje 
+    y. El tercer parametro es la difuminacion de la sombra. El cuarto parametro es sombra con respecto al elemento*/
+    box-shadow: inset 0px 0px 20px 5px #F2BFB3;
+}
+/* Before permite crear subelementos dentro de los div (Contenedor) */
+.reloj::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #580259;
+    border-radius: 50vh;
+    /* Sirve para poner los elementos por encima de otros elementos */
+    z-index: 100;
+}
+.hora{
+    width: 140px;
+    height: 140px;
+}
+.minuto{
+    width: 220px;
+    height: 220px;
+}
+.segundo{
+    width: 250px;
+    height: 250px;
+}
+.hora::before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 90px;
+    background: beige;
+    z-index: 10;
+    border-radius: 50vh;
+}
+.minuto::before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 130px;
+    background: #F2BFB3;
+    z-index: 11;
+    border-radius: 50vh;
+}
+.segundo::before{
+    content: '';
+    position: absolute;
+    width: 1.8px;
+    height: 150px;
+    background: #ffeeeb;
+    z-index: 12;
+    border-radius: 50vh;
+}
+.hora, .minuto, .segundo{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50vh;
+}
