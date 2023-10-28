@@ -2,7 +2,7 @@
 let esqueleto = "off";
 let esqueletoStop = document.getElementById("esqueletoQuieto")
 let botonSonido = new Audio ("./sound/boton.mp3")
-let sonidoFondo = new Audio ("./sound/suavemente.mp3")
+let sonidoFondo = new Audio ("./sound/Dancing.mp3")
 
 // Creamos una funcion llamada bailar que cambiara los valores de la varaiable esqueleto
 function bailar(){
