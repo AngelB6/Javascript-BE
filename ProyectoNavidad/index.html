@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navidad</title>
+    <link rel="stylesheet" href="./css/Style.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <h4 class="titulo" id="titulo">Faltan Para Navidad:</h4>
+        <div id="cuentaRegresiva">
+            <div class="valores">
+                <div id="dias" class="time"></div>
+                <p>D</p>
+            </div>
+            <div class="valores">
+                <div id="horas" class="time"></div>
+                <p>H</p>
+            </div>
+            <div class="valores">
+                <div id="minutos" class="time"></div>
+                <p>M</p>
+            </div>
+            <div class="valores">
+                <div id="segundos" class="time"></div>
+                <p>S</p>
+            </div>
+        </div>
+        <div class="botones">
+            <div id="buttonPlay" class="offMusic" onclick="musicPlay()">Play</div>
+            <div id="buttonPause" class="pauseMusic" onclick="musicPause()">Pause</div>
+        </div>
+    </div>
+    <div class="baile">
+        <div id="noelQuieto" class="noelOff"></div>
+    </div>
+    <script src="./Script.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+    min-width: auto;
+    background-color: rgb(83, 200, 220);
+}
+h4{
+    color: red;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+#cuentaRegresiva{
+    width: auto;
+    height: 150px;
+    display: flex;
+    font-family: monospace;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    gap: 6px;
+}
+.valores{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.valores p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+.noelOff{
+    width: 550px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../img/PapaNoelQuieto.png');
+    gap: -500px;
+}
+.noelOff.on{
+    width: 570px;
+    height: 500px;
+    display: flex;
+    background-image: url('../img/PapaNoelBaile.gif');
+    align-items: center;
+    justify-content: center;
+    gap: -500px;
+}
+.offMusic, .pauseMusic{
+    pointer-events: none;
+    display: flex;
+    width: 90px;
+    height: 50px;
+    border-radius: 2vh;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+    cursor: pointer;
+    background-color: white;
+    border-color: rgb(228, 187, 112);
+    color: orangered;
+    font-weight: bolder;
+}
+.onMusic{
+    display: flex;
+    width: 90px;
+    height: 50px;
+    border-radius: 2vh;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+    cursor: pointer;
+    background-color: orangered;
+    border-color: rgb(228, 187, 112);
+    color: white;
+    font-weight: bolder;
+}
+.onMusic:hover{
+    background-color: white;
+    color: orangered;
+}
+.pause{
+    display: flex;
+    width: 90px;
+    height: 50px;
+    border-radius: 2vh;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+    cursor: pointer;
+    background-color: orangered;
+    border-color: rgb(228, 187, 112);
+    color: white;
+    font-weight: bolder;
+}
+.pause:hover{
+    background-color: white;
+    color: orangered;
+}
+.time, #segundos, #minutos, #horas, #dias{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px 20px 50px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 30px;
+    font-size: 40px;
+    margin-top: 15px;
+}
