@@ -53,7 +53,7 @@ function cuentaRegresiva(tiempoFaltante, reloj, mensaje) {
     }, 1000)
 };
 
-cuentaRegresiva('Nov 08 2023 18:01:00 GMT-0500', 'cuentaRegresiva', '¡Feliz Navidad!')
+cuentaRegresiva('Nov 08 2023 18:03:00 GMT-0500', 'cuentaRegresiva', '¡Feliz Navidad!')
 
 function musicPlay() {
     sonidoFondo.play();
