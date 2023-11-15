@@ -3,9 +3,122 @@
     margin: 0;
     box-sizing: border-box;
 }
-.formulario{
-
+.contenedor{
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #00AAFF;
 }
-.eventos{
-    
+h1{
+    display: flex;
+    text-align: center;
+    color: white;
+    font-family: monospace;
+    font-size: 5vh;
+}
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+    padding-bottom: 40px;
+}
+.formulario > form{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 350px;
+    height: auto;
+    border-radius: 20px;
+    background-color: #EFF8FF;
+    gap: 5px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px 0px #ffffff;
+}
+.icono{
+    height: 60px;
+    width: auto;
+}
+.formulario > form > #fechaEvento{
+    padding-left: 1.5px;
+    padding-right: 1.5px;
+}
+.formulario > form > #nombreEvento, #fechaEvento{
+    padding: 5px 20px 5px 20px;
+    color: black;
+    border-color: #00AAFF;
+    outline: #00AAFF;
+    border-radius: 20px;
+}
+.formulario > form > #agregar{
+    padding: 15px;
+    background-color: #00AAFF;
+    color: white;
+    border-radius: 20px 20px 20px 20px;
+    cursor: pointer;
+    outline: auto;
+}
+.contenedorEventos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contenedorEventos > #listaEventos{
+    padding: 20px;
+    max-width: auto;
+    background-color: #EFF8FF;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px #ffffff;
+}
+.evento{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    border: 2px solid #2FADED;
+    width: 800px;
+    height: 80px;
+    margin-bottom: 20px;
+    padding: 50px 0;
+}
+.dias{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    font-size: 20px;
+    margin-left: 30px;
+    font-weight: medium;
+}
+.dias > .diasFaltantes{
+    font-size: 4vh;
+    color: #24AD54;
+    font-weight: bold;
+}
+.nombreEvento{
+    width: 300px;
+    font-size: 4vh;
+    overflow-x: auto;
+    text-align: center;
+}   
+.fechaEvento{
+    font-size: 3vh;
+    width: auto;
+}
+.eliminar{
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 20px;
+    margin-right: 30px;
+    border: none;
+    color: black;
+    background-color: #8BD93D;
+}
+.eliminar:hover{
+    color: white;
+    background-color: #D93B3B;
+}
+footer{
+    margin-top: 80px;
+    text-align: center;
 }

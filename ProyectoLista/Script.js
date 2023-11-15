@@ -58,9 +58,10 @@ function mostrarEventos() {
     const eventosHTML = eventos.map((evento) =>{
         return `
         <div class="evento">
-            <div class="dias>
+            <div class="dias">
                 <span class="diasFaltantes">${diferenciaFecha(evento.fecha)}</span>
-                <span class="texto">dias para</span>
+                <span class="texto">dias</span>
+                <span class="texto">para</span>
             </div>
             <div class="nombreEvento">${evento.nombre}</div>
             <div class="fechaEvento">${evento.fecha}</div>

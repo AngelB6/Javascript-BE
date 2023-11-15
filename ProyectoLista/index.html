@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eventos</title>
-    <link rel="stylesheet" href="./css/Style.css">
-</head>
-<body>
-    <div class="eventos">
+    <link rel="stylesheet" href="./css/Style.css" />
+  </head>
+  <body>
+    <div class="contenedor">
+      <div class="eventos">
         <div class="formulario">
-            <!-- Formulario superior -->
-            <form>
-                <input type="text" id="nombreEvento">
-                <input type="date" id="fechaEvento">
-                <input type="submit" id="agregar" value="Agregar Evento">
-            </form>
+          <h1>
+            Proximos Eventos
+            <img src="./img/icon.png" alt="icono" class="icono" />
+          </h1>
+          <!-- Formulario superior -->
+          <form>
+            <input type="text" id="nombreEvento" />
+            <input type="date" id="fechaEvento" />
+            <input type="submit" id="agregar" value="Agregar Evento" />
+          </form>
         </div>
-        <div class="listaEventos2" id="listaEventos">
+        <div class="contenedorEventos">
+          <div class="listaEventos2" id="listaEventos"></div>
         </div>
+      </div>
+      <footer>
+        <a
+          href="https://www.flaticon.es/iconos-gratis/eventos"
+          title="eventos iconos"
+          >Eventos iconos creados por Vectors Tank - Flaticon</a>
+      </footer>
     </div>
-    <script src="./Script.js"></script>
-</body>
+  </body>
+  <script src="./Script.js"></script>
 </html>
