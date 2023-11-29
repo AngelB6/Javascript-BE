@@ -15,7 +15,6 @@ inputTarjeta.addEventListener("keydown", (e)=>{
         return;
     }
     e.preventDefault();
-
     ingresoDatos(mascaraNumero, e.key, TarjetaNumero);
     inputTarjeta.value = TarjetaNumero.join("");
 });
@@ -24,9 +23,7 @@ inputFecha.addEventListener("keydown", (e)=>{
     if (e.key === "Tab") {
         return;
     }
-
     e.preventDefault();
-
     ingresoDatos(mascaraFecha, e.key, FechaNumero);
     inputFecha.value = FechaNumero.join("");
 });
@@ -35,9 +32,7 @@ inputCVV.addEventListener("keydown", (e)=>{
     if (e.key === "Tab") {
         return;
     }
-
     e.preventDefault();
-
     ingresoDatos(mascaraCVV, e.key, cvvNumero);
     inputCVV.value = cvvNumero.join("");
 });
@@ -49,7 +44,6 @@ function ingresoDatos(mascara, key, arreglo) {
         arreglo.pop();
         return;
     }
-
     if (numeros.includes(key) && arreglo.length + 1 <= mascara.length) {
         if (mascara[arreglo.length] === "-" || mascara[arreglo.length] === "/") {
             arreglo.push(mascara[arreglo.length], key);
